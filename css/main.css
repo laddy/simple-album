@@ -1,0 +1,18 @@
+header {
+    margin-bottom: 20px;
+}
+
+#picture_list {
+    margin: 0 8px 0 8px;
+
+}
+
+.item {
+    display: block;
+    width: 200px;
+    margin-left: 5px;
+}
+
+.modal {
+    width: 300px;
+}
