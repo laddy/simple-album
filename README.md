@@ -11,9 +11,9 @@
 
 ## Setup
 
-DB作成
+- MySQLにpictureというDBを作成してsqlを実行
+- application/config/database.php にDB接続の内容が書いてあるので適宜修正
 
-	$ mysql 
 
 ## License
 
