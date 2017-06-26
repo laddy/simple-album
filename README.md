@@ -1,17 +1,23 @@
 # simple-album
 
-シンプルな写真投稿管理
+シンプルな画像管理ツール
 
-## セットアップ
+## 動作環境
 
+- PHP5.4 以上
+- MySQL5.5 以上
+- ApacheやらNginxが動作する環境でDocrootに突っ込んで下さい
+- Codeigniterを使っているのでセットアップ方法などは適度調べて下さい
 
-## 使い方
+## Setup
 
-## 使用ライブラリ
+DB作成
 
-- CodeIgniter https://codeigniter.com/
-- Mini.css http://www.yahoo.co.jp
-- CodeIgniter [http://www.yahoo.co.jp]
-- 
-## 作った人
+	$ mysql 
+
+## License
+
+- This software is released under the MIT License, see LICENSE.md
+- [@laddy](https://twitter.com/laddy, "laddy")
+
 

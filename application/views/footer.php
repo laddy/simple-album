@@ -3,6 +3,7 @@
 </footer>
 
 <script src="<?=base_url();?>js/jquery-3.2.1.slim.min.js"></script>
+<script src="<?=base_url();?>js/lightbox-plus-jquery.min.js"></script>
 <script src="<?=base_url();?>js/masonry.pkgd.min.js"></script>
 <script>
 $(function(){
@@ -11,6 +12,11 @@ $(function(){
         isFitWidth   : true
     });
 
+/*
+    lightbox.option({
+      'albumLabel': "image %1 of %2 ",
+    })
+*/
 });
 </script>
 </body>

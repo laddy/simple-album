@@ -10,6 +10,7 @@
 <title>シンプル写真管理</title>
 
 <link rel="stylesheet" href="https://gitcdn.link/repo/Chalarangelo/mini.css/master/dist/mini-default.min.css">
+<link rel="stylesheet" href="<?=base_url();?>css/lightbox.min.css">
 <link rel="stylesheet" href="<?=base_url();?>css/main.css">
 
 <!--[if lt IE 9]>
