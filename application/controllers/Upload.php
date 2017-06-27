@@ -19,6 +19,9 @@ class Upload extends MY_Controller
     public function picture()
     {
         $post = $this->input->post();
+        if ( empty($post['category']) ) {
+            $post['category'] = $category_id;
+        }
         $config = [
             'upload_path'     => $_SERVER['DOCUMENT_ROOT'].'/upload/'.$post['category'].'/',
             'allowed_types'   => 'gif|jpg|png',
@@ -30,7 +33,6 @@ class Upload extends MY_Controller
         if ( !($this->upload->do_upload('pic')) )
         {
             $error = ['error' => $this->upload->display_errors()];
-
             $this->load->view('header');
             $this->load->view('upload', $error);
             $this->load->view('footer');
@@ -38,9 +40,17 @@ class Upload extends MY_Controller
         // Upload成功
         else
         {
-            // $data = ['upload_data' => $this->upload->data()];
             $this->Picture->insert_entry($this->upload->data(), $post);
-            redirect(base_url().'category/'.$post['category']);
+            echo json_encode(['name' => $this->upload->data('client_name')]);
+            exit();
+            // $data = ['upload_data' => $this->upload->data()];
+//            redirect(base_url().'category/'.$post['category']);
         }
+    }
+
+    public function ajax_upload($category_id = 1)
+    {
+        $this->picture($category_id);
+        exit();
     }
 }

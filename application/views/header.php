@@ -11,6 +11,9 @@
 
 <link rel="stylesheet" href="https://gitcdn.link/repo/Chalarangelo/mini.css/master/dist/mini-default.min.css">
 <link rel="stylesheet" href="<?=base_url();?>css/lightbox.min.css">
+
+<link rel="stylesheet" href="<?=base_url();?>css/jquery.fileupload.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css">
 <link rel="stylesheet" href="<?=base_url();?>css/main.css">
 
 <!--[if lt IE 9]>
