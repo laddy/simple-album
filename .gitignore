@@ -26,3 +26,6 @@ composer.lock
 *.sublime-workspace
 *.sublime-project
 
+
+# APP DIR
+/upload/
